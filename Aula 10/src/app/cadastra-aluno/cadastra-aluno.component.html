@@ -1,0 +1,7 @@
+<form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+    <input required type="number" name="ra" [(ngModel)]="ra" placeholder="R.A">
+    <input required type="string" name="nome" [(ngModel)]="nome" placeholder="Nome">
+    <input required type="email" name="email" [(ngModel)]="email" placeholder="Email">
+    <input required type="celular" name="celular" [(ngModel)]="celular" placeholder="Celular">
+    <button type="submit" [disabled]="!myform.valid">Salvar</button>
+    </form>

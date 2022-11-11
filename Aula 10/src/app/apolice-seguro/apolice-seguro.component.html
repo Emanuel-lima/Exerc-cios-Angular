@@ -1,0 +1,8 @@
+<form #myform = "ngForm">
+    <input type="string" name="nome" [(ngModel)]="nome" placeholder="Nome">
+    <input type="string" name="sexo" [(ngModel)]="sexo" placeholder="Sexo">
+    <input type="number" name="idade" [(ngModel)]="idade" placeholder="Idade">
+    <input type="number" name="valor" [(ngModel)]="valor" placeholder="Valor">
+    <input type="number" name="resultado" [(ngModel)]="resultado" placeholder="Resultado">
+    <button type="submit"(click)="calcularApolice()" class="btn btn-primary">Calcular</button>
+    </form>
